@@ -13,14 +13,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'package:intl/intl.dart' show DateFormat;
+// import 'package:intl/intl.dart' show DateFormat;
 import '../../../../common/date_time_factory.dart' show DateTimeFactory;
 import 'time_tick_formatter.dart' show TimeTickFormatter;
 
 /// Formatter that can format simple and transition time ticks differently.
 class TimeTickFormatterImpl implements TimeTickFormatter {
-  final DateFormat _simpleFormat;
-  final DateFormat _transitionFormat;
+  final dynamic _simpleFormat;
+  final dynamic _transitionFormat;
   final CalendarField? transitionField;
 
   /// Create time tick formatter.
@@ -35,8 +35,8 @@ class TimeTickFormatterImpl implements TimeTickFormatter {
     required String? simpleFormat,
     required String? transitionFormat,
     this.transitionField,
-  })  : _simpleFormat = dateTimeFactory.createDateFormat(simpleFormat),
-        _transitionFormat = dateTimeFactory.createDateFormat(transitionFormat);
+  })  : _simpleFormat = dynamic,
+        _transitionFormat = dynamic;
 
   @override
   String formatFirstTick(DateTime date) => _transitionFormat.format(date);

@@ -14,7 +14,6 @@
 // limitations under the License.
 
 import 'package:meta/meta.dart' show immutable;
-import 'package:intl/intl.dart';
 
 import '../numeric_extents.dart' show NumericExtents;
 import 'axis_spec.dart' show AxisSpec, RenderSpec;
@@ -40,9 +39,9 @@ class PercentAxisSpec extends NumericAxisSpec {
             renderSpec: renderSpec,
             tickProviderSpec: tickProviderSpec ??
                 const BasicNumericTickProviderSpec(dataIsInWholeNumbers: false),
-            tickFormatterSpec: tickFormatterSpec ??
-                BasicNumericTickFormatterSpec.fromNumberFormat(
-                    NumberFormat.percentPattern()),
+            tickFormatterSpec: tickFormatterSpec,
+            // BasicNumericTickFormatterSpec.fromNumberFormat(
+            //     NumberFormat.percentPattern()),
             showAxisLine: showAxisLine,
             viewport: viewport ?? const NumericExtents(0.0, 1.0));
 

@@ -16,7 +16,8 @@
 import 'dart:math' show Rectangle;
 
 import 'package:meta/meta.dart' show protected;
-import 'package:intl/intl.dart';
+
+// import 'package:intl/intl.dart';
 
 import '../../../../common/graphics_factory.dart' show GraphicsFactory;
 import '../../../cartesian/axis/spec/axis_spec.dart' show TextStyleSpec;
@@ -97,12 +98,14 @@ abstract class Legend<D> implements ChartBehavior<D>, LayoutView {
   /// the legend entries.
   List<MutableSeries<D>>? _postProcessSeriesList;
 
-  static final _decimalPattern = NumberFormat.decimalPattern();
+  // static final _decimalPattern = _decimalPattern;
 
   /// Default measure formatter for legends.
   @protected
   String defaultLegendMeasureFormatter(num? value) {
-    return (value == null) ? '' : _decimalPattern.format(value);
+    // return (value == null) ? ''
+    // : _decimalPattern.format(value);
+    return '';
   }
 
   Legend({

@@ -13,7 +13,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'package:intl/intl.dart';
 import 'package:meta/meta.dart' show immutable;
 
 import '../../../../common/graphics_factory.dart' show GraphicsFactory;
@@ -79,9 +78,9 @@ class BucketingAxisSpec extends NumericAxisSpec {
             renderSpec: renderSpec,
             tickProviderSpec:
                 tickProviderSpec ?? const BucketingNumericTickProviderSpec(),
-            tickFormatterSpec: tickFormatterSpec ??
-                BasicNumericTickFormatterSpec.fromNumberFormat(
-                    NumberFormat.percentPattern()),
+            tickFormatterSpec: tickFormatterSpec,
+            // BasicNumericTickFormatterSpec.fromNumberFormat(
+            //     NumberFormat.percentPattern()),
             showAxisLine: showAxisLine,
             viewport: viewport ?? const NumericExtents(0.0, 1.0));
 

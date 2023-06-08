@@ -13,14 +13,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'package:intl/intl.dart' show DateFormat;
+// import 'package:intl/intl.dart' show DateFormat;
 import '../../../../common/date_time_factory.dart';
 import 'time_tick_formatter_impl.dart'
     show CalendarField, TimeTickFormatterImpl;
 
 /// Hour specific tick formatter which will format noon differently.
 class HourTickFormatter extends TimeTickFormatterImpl {
-  late final DateFormat _noonFormat;
+  late final dynamic _noonFormat;
 
   HourTickFormatter(
       {required DateTimeFactory dateTimeFactory,
@@ -32,7 +32,7 @@ class HourTickFormatter extends TimeTickFormatterImpl {
             simpleFormat: simpleFormat,
             transitionFormat: transitionFormat,
             transitionField: CalendarField.date) {
-    _noonFormat = dateTimeFactory.createDateFormat(noonFormat);
+    // _noonFormat = dateTimeFactory.createDateFormat(noonFormat);
   }
 
   @override

@@ -13,7 +13,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'package:intl/intl.dart' show DateFormat;
+// import 'package:intl/intl.dart' show DateFormat;
 
 /// Interface for factory that creates [DateTime] and [DateFormat].
 ///
@@ -39,7 +39,7 @@ abstract class DateTimeFactory {
       int microsecond = 0]);
 
   /// Returns a [DateFormat].
-  DateFormat createDateFormat(String? pattern);
+  // DateFormat createDateFormat(String? pattern);
 }
 
 /// A local time [DateTimeFactory].
@@ -66,8 +66,8 @@ class LocalDateTimeFactory implements DateTimeFactory {
   }
 
   /// Returns a [DateFormat].
-  @override
-  DateFormat createDateFormat(String? pattern) => DateFormat(pattern);
+  // @override
+  // DateFormat createDateFormat(String? pattern) => DateFormat(pattern);
 }
 
 /// An UTC time [DateTimeFactory].
@@ -95,6 +95,6 @@ class UTCDateTimeFactory implements DateTimeFactory {
   }
 
   /// Returns a [DateFormat].
-  @override
-  DateFormat createDateFormat(String? pattern) => DateFormat(pattern);
+  // @override
+  // DateFormat createDateFormat(String? pattern) => DateFormat(pattern);
 }

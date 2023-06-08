@@ -14,7 +14,6 @@
 // limitations under the License.
 
 import 'package:meta/meta.dart' show immutable;
-import 'package:intl/intl.dart' show DateFormat;
 
 import '../../../../common/date_time_factory.dart' show DateTimeFactory;
 import '../../../../common/graphics_factory.dart' show GraphicsFactory;
@@ -247,13 +246,13 @@ class TimeFormatterSpec {
 @immutable
 class BasicDateTimeTickFormatterSpec implements DateTimeTickFormatterSpec {
   final DateTimeFormatterFunction? formatter;
-  final DateFormat? dateFormat;
+  final dynamic dateFormat;
 
   const BasicDateTimeTickFormatterSpec(DateTimeFormatterFunction formatter)
       : formatter = formatter,
         dateFormat = null;
 
-  const BasicDateTimeTickFormatterSpec.fromDateFormat(DateFormat dateFormat)
+  const BasicDateTimeTickFormatterSpec.fromDateFormat(dateFormat)
       : formatter = null,
         dateFormat = dateFormat;
 

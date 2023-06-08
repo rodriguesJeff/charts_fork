@@ -14,7 +14,6 @@
 // limitations under the License.
 
 import 'package:charts_common/src/chart/cartesian/axis/tick_formatter.dart';
-import 'package:intl/intl.dart';
 import 'package:meta/meta.dart' show immutable;
 
 import '../../../../common/graphics_factory.dart' show GraphicsFactory;
@@ -222,7 +221,7 @@ class StaticNumericTickProviderSpec implements NumericTickProviderSpec {
 @immutable
 class BasicNumericTickFormatterSpec implements NumericTickFormatterSpec {
   final MeasureFormatter? formatter;
-  final NumberFormat? numberFormat;
+  final dynamic numberFormat;
 
   /// Simple [TickFormatterSpec] that delegates formatting to the given
   /// [NumberFormat].
