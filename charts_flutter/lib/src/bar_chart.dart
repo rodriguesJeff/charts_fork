@@ -15,7 +15,7 @@
 
 import 'dart:collection' show LinkedHashMap;
 
-import 'package:charts_common/common.dart' as common
+import 'package:icharts_common/icharts_common.dart' as common
     show
         AxisSpec,
         BarChart,
@@ -26,11 +26,12 @@ import 'package:charts_common/common.dart' as common
         RTLSpec,
         Series,
         SeriesRendererConfig;
-import 'behaviors/domain_highlighter.dart' show DomainHighlighter;
-import 'behaviors/chart_behavior.dart' show ChartBehavior;
 import 'package:meta/meta.dart' show immutable;
+
 import 'base_chart.dart' show LayoutConfig;
 import 'base_chart_state.dart' show BaseChartState;
+import 'behaviors/chart_behavior.dart' show ChartBehavior;
+import 'behaviors/domain_highlighter.dart' show DomainHighlighter;
 import 'cartesian_chart.dart' show CartesianChart;
 import 'selection_model_config.dart' show SelectionModelConfig;
 import 'user_managed_state.dart' show UserManagedState;

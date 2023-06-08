@@ -15,7 +15,7 @@
 
 import 'dart:collection' show LinkedHashMap;
 
-import 'package:charts_common/common.dart' as common
+import 'package:icharts_common/icharts_common.dart' as common
     show
         AxisSpec,
         LineChart,
@@ -24,10 +24,11 @@ import 'package:charts_common/common.dart' as common
         Series,
         LineRendererConfig,
         SeriesRendererConfig;
-import 'behaviors/line_point_highlighter.dart' show LinePointHighlighter;
-import 'behaviors/chart_behavior.dart' show ChartBehavior;
+
 import 'base_chart.dart' show LayoutConfig;
 import 'base_chart_state.dart' show BaseChartState;
+import 'behaviors/chart_behavior.dart' show ChartBehavior;
+import 'behaviors/line_point_highlighter.dart' show LinePointHighlighter;
 import 'cartesian_chart.dart' show CartesianChart;
 import 'selection_model_config.dart' show SelectionModelConfig;
 import 'user_managed_state.dart' show UserManagedState;

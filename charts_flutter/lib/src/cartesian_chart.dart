@@ -14,9 +14,8 @@
 // limitations under the License.
 
 import 'dart:collection' show LinkedHashMap;
-import 'package:meta/meta.dart' show immutable, protected;
 
-import 'package:charts_common/common.dart' as common
+import 'package:icharts_common/icharts_common.dart' as common
     show
         AxisSpec,
         BaseChart,
@@ -26,9 +25,11 @@ import 'package:charts_common/common.dart' as common
         RTLSpec,
         Series,
         SeriesRendererConfig;
+import 'package:meta/meta.dart' show immutable, protected;
+
+import 'base_chart.dart' show BaseChart, LayoutConfig;
 import 'base_chart_state.dart' show BaseChartState;
 import 'behaviors/chart_behavior.dart' show ChartBehavior;
-import 'base_chart.dart' show BaseChart, LayoutConfig;
 import 'selection_model_config.dart' show SelectionModelConfig;
 import 'user_managed_state.dart' show UserManagedState;
 

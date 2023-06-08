@@ -13,10 +13,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'dart:ui' as ui show Shader;
 import 'dart:math' show Point, Rectangle;
+import 'dart:ui' as ui show Shader;
+
 import 'package:flutter/material.dart';
-import 'package:charts_common/common.dart' as common show Color;
+import 'package:icharts_common/icharts_common.dart' as common show Color;
 
 /// Draws a simple line.
 ///

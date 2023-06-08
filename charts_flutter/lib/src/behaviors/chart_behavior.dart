@@ -14,14 +14,15 @@
 // limitations under the License.
 
 import 'dart:math' show Rectangle;
-import 'package:charts_common/common.dart' as common
+
+import 'package:flutter/widgets.dart' show BuildContext, Widget;
+import 'package:icharts_common/icharts_common.dart' as common
     show
         BehaviorPosition,
         InsideJustification,
         OutsideJustification,
         ChartBehavior;
 import 'package:meta/meta.dart' show immutable;
-import 'package:flutter/widgets.dart' show BuildContext, Widget;
 
 import '../base_chart_state.dart' show BaseChartState;
 

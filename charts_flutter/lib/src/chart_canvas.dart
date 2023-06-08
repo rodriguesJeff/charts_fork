@@ -13,9 +13,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'dart:ui' as ui show Gradient, Shader;
 import 'dart:math' show Point, Rectangle, max;
-import 'package:charts_common/common.dart' as common
+import 'dart:ui' as ui show Gradient, Shader;
+
+import 'package:flutter/material.dart';
+import 'package:icharts_common/icharts_common.dart' as common
     show
         BlendMode,
         ChartCanvas,
@@ -29,13 +31,13 @@ import 'package:charts_common/common.dart' as common
         StyleFactory,
         TextElement,
         TextDirection;
-import 'package:flutter/material.dart';
-import 'text_element.dart' show TextElement;
+
 import 'canvas/circle_sector_painter.dart' show CircleSectorPainter;
 import 'canvas/line_painter.dart' show LinePainter;
 import 'canvas/pie_painter.dart' show PiePainter;
 import 'canvas/point_painter.dart' show PointPainter;
 import 'canvas/polygon_painter.dart' show PolygonPainter;
+import 'text_element.dart' show TextElement;
 
 class ChartCanvas implements common.ChartCanvas {
   /// Pixels to allow to overdraw above the draw area that fades to transparent.

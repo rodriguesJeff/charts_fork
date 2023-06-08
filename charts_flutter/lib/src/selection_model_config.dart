@@ -13,9 +13,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+import 'package:icharts_common/icharts_common.dart' as common;
 import 'package:meta/meta.dart' show immutable;
-
-import 'package:charts_common/common.dart' as common;
 
 @immutable
 class SelectionModelConfig<D> {

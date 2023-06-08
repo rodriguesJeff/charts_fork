@@ -14,15 +14,16 @@
 // limitations under the License.
 
 import 'dart:ui' show TextAlign, TextDirection;
-import 'package:charts_common/common.dart' as common
+
+import 'package:flutter/rendering.dart'
+    show Color, TextBaseline, TextPainter, TextSpan, TextStyle;
+import 'package:icharts_common/icharts_common.dart' as common
     show
         MaxWidthStrategy,
         TextElement,
         TextDirection,
         TextMeasurement,
         TextStyle;
-import 'package:flutter/rendering.dart'
-    show Color, TextBaseline, TextPainter, TextSpan, TextStyle;
 
 /// Flutter implementation for text measurement and painter.
 class TextElement implements common.TextElement {

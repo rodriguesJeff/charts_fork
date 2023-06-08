@@ -14,13 +14,13 @@
 // limitations under the License.
 
 import 'dart:math' show Rectangle;
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
 
-import 'package:charts_common/common.dart' as common
-    show BehaviorPosition, InsideJustification, OutsideJustification;
 import 'package:charts_flutter/src/behaviors/chart_behavior.dart';
 import 'package:charts_flutter/src/widget_layout_delegate.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:icharts_common/icharts_common.dart' as common
+    show BehaviorPosition, InsideJustification, OutsideJustification;
 
 const chartContainerLayoutID = 'chartContainer';
 

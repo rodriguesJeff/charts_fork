@@ -13,8 +13,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'package:charts_common/common.dart' as common show Color;
 import 'dart:ui' as ui;
+
+import 'package:icharts_common/icharts_common.dart' as common show Color;
 
 class ColorUtil {
   static ui.Color toDartColor(common.Color color) {

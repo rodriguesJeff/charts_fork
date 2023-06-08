@@ -13,7 +13,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'package:charts_common/common.dart' as common
+import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:flutter/scheduler.dart';
+import 'package:icharts_common/icharts_common.dart' as common
     show
         A11yNode,
         AxisDirection,
@@ -26,9 +29,6 @@ import 'package:charts_common/common.dart' as common
         SelectionModelType,
         Series,
         Performance;
-import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/scheduler.dart';
 
 import 'base_chart.dart' show BaseChart;
 import 'base_chart_state.dart' show BaseChartState;
@@ -206,7 +206,8 @@ class ChartContainerRenderObject<D> extends RenderCustomPaint
       _ambiguate(SchedulerBinding.instance)!.scheduleFrame();
     }
 
-    _ambiguate(SchedulerBinding.instance)!.addPostFrameCallback(startAnimationController);
+    _ambiguate(SchedulerBinding.instance)!
+        .addPostFrameCallback(startAnimationController);
   }
 
   /// Request Flutter to rebuild the widget/container of chart.

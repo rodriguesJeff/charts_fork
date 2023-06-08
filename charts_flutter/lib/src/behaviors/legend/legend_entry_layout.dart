@@ -13,11 +13,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'package:charts_common/common.dart' as common;
 import 'package:charts_flutter/src/util/color.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart'
     show GestureDetector, GestureTapUpCallback, TapUpDetails, Theme;
+import 'package:flutter/widgets.dart';
+import 'package:icharts_common/icharts_common.dart' as common;
 
 import '../../symbol_renderer.dart';
 import 'legend.dart' show TappableLegend;

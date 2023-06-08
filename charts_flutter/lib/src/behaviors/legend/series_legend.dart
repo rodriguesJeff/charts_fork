@@ -13,7 +13,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'package:charts_common/common.dart' as common
+import 'package:collection/collection.dart' show ListEquality;
+import 'package:flutter/widgets.dart'
+    show BuildContext, EdgeInsets, Widget, hashValues;
+import 'package:icharts_common/icharts_common.dart' as common
     show
         BehaviorPosition,
         ChartBehavior,
@@ -26,10 +29,8 @@ import 'package:charts_common/common.dart' as common
         SeriesLegend,
         SelectionModelType,
         TextStyleSpec;
-import 'package:collection/collection.dart' show ListEquality;
-import 'package:flutter/widgets.dart'
-    show BuildContext, EdgeInsets, Widget, hashValues;
 import 'package:meta/meta.dart' show immutable;
+
 import '../../chart_container.dart' show ChartContainerRenderObject;
 import '../chart_behavior.dart'
     show BuildableBehavior, ChartBehavior, GestureType;
